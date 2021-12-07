@@ -22,6 +22,11 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+#HTML file
+@app.route('/api/test')
+def index():
+    return "<h1> It works </h1>"
+
 #Get switches info from database
 @app.route('/api/getswitches', methods = ['GET'])
 def getswitches():
