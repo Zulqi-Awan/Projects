@@ -24,7 +24,7 @@ def index():
 
 #HTML file
 @app.route('/api/test')
-def index():
+def test():
     return "<h1> It works </h1>"
 
 #Get switches info from database
